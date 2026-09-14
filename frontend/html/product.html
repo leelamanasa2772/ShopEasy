@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Products - ShopEasy</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ===============================
+         Navigation Bar
+         =============================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                ShopEasy
+            </div>
+
+
+            <ul class="nav-links">
+
+    <li>
+        <a href="index.html">
+            Home
+        </a>
+    </li>
+
+    <li>
+        <a href="product.html">
+            Products
+        </a>
+    </li>
+
+    <li>
+        <a href="cart.html">
+            Cart 🛒
+            <span id="cart-count">0</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="orders.html">
+            Orders
+        </a>
+    </li>
+
+    <!-- Logged-in User -->
+
+    <li>
+        <span id="user-name">
+            Welcome
+        </span>
+    </li>
+
+    <!-- Logout -->
+
+    <li>
+        <a href="#" id="logout-btn">
+            Logout
+        </a>
+    </li>
+
+</ul>
+        </nav>
+
+    </header>
+
+<!-- Add Product Section -->
+<section class="add-product-section">
+
+    <h2>Add Product</h2>
+
+    <form id="product-form">
+
+        <input
+            type="text"
+            id="product-name"
+            placeholder="Product Name"
+            required
+        >
+
+        <input
+            type="number"
+            id="product-price"
+            placeholder="Price"
+            required
+        >
+
+        <select id="product-category" required>
+
+            <option value="">
+                Select Category
+            </option>
+
+            <option value="electronics">
+                Electronics
+            </option>
+
+            <option value="fashion">
+                Fashion
+            </option>
+
+            <option value="accessories">
+                Accessories
+            </option>
+
+        </select>
+
+        <input
+            type="text"
+            id="product-image"
+            placeholder="Image URL"
+            required
+        >
+
+        <textarea
+            id="product-description"
+            placeholder="Product Description"
+            required
+        ></textarea>
+
+        <button type="submit">
+            Add Product
+        </button>
+
+    </form>
+
+</section>
+
+    <!-- ===============================
+         Products Section
+         =============================== -->
+
+    <section class="products-section">
+
+        <h2>
+            Our Products
+        </h2>
+
+
+        <!-- Search and Category Filter -->
+
+        <div class="product-filters">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search products..."
+            >
+
+
+            <select id="category-filter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+
+                <option value="electronics">
+                    Electronics
+                </option>
+
+
+                <option value="fashion">
+                    Fashion
+                </option>
+
+
+                <option value="accessories">
+                    Accessories
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- Product Container -->
+
+        <div
+            id="product-container"
+            class="product-container">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ===============================
+         Footer
+         =============================== -->
+
+    <footer>
+
+        <p>
+            © 2026 ShopEasy. All rights reserved.
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="../js/product.js"></script>
+
+</body>
+
+</html>

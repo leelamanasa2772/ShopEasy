@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - ShopEasy</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                ShopEasy
+            </div>
+
+            <ul class="nav-links">
+
+    <li>
+        <a href="index.html">
+            Home
+        </a>
+    </li>
+
+    <li>
+        <a href="product.html">
+            Products
+        </a>
+    </li>
+
+    <li>
+        <a href="cart.html">
+            Cart 🛒
+            <span id="cart-count">0</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="orders.html">
+            Orders
+        </a>
+    </li>
+
+    <!-- Logged-in User -->
+
+    <li>
+        <span id="user-name">
+            Welcome
+        </span>
+    </li>
+
+    <!-- Logout -->
+
+    <li>
+        <a href="#" id="logout-btn">
+            Logout
+        </a>
+    </li>
+
+</ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+
+        <h2>Shopping Cart 🛒</h2>
+
+        <div id="cart-container">
+
+            <!-- Cart products will appear here -->
+
+        </div>
+
+
+        <!-- Cart Summary -->
+        <div class="cart-summary">
+
+            <h3>
+                Total:
+                ₹<span id="cart-total">0</span>
+            </h3>
+
+            <button onclick="placeOrder()">
+                Place Order
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 ShopEasy. All rights reserved.</p>
+
+    </footer>
+
+
+    <script src="../js/cart.js"></script>
+
+</body>
+
+</html>
